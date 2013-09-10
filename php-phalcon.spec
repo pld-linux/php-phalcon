@@ -18,6 +18,15 @@ URL:		http://phalconphp.com/
 BuildRequires:	%{php_name}-devel
 BuildRequires:	rpmbuild(macros) >= 1.666
 %{?requires_php_extension}
+Suggests:	%{php_name}-mbstring
+Suggests:	%{php_name}-mcrypt
+Suggests:	%{php_name}-openssl
+Suggests:	%{php_name}-pdo
+Suggests:	%{php_name}-pdo-mysql
+Suggests:	%{php_name}-pdo-oci
+Suggests:	%{php_name}-pdo-pgsql
+Suggests:	%{php_name}-pdo-sqlite
+Suggests:	%{php_name}-pecl-mongo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %ifarch %{ix86}
